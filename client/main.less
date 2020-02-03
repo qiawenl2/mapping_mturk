@@ -1,0 +1,307 @@
+.consent {
+  button {
+    width: 16rem;
+  }
+}
+
+.instructions {
+  button {
+    width: 15rem;
+    padding-right: 2rem;
+    margin-right: 100px;
+  }
+  .button-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .call-out {
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: 1em;
+  }
+}
+
+.exit-survey {
+  em {
+    color: blue;
+  }
+  .bold {
+    font-weight: bold;
+  }
+
+  .form-line {
+    display: flex;
+
+    .form-group {
+      margin-right: 30px;
+
+      textarea {
+        min-height: 90px;
+      }
+    }
+
+    &.thirds {
+      .pt-form-group {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 30%;
+
+        .pt-label {
+          min-height: 36px;
+        }
+      }
+    }
+  }
+}
+
+.player-profile {
+  display: flex;
+  flex-direction: column;
+  width: 19rem;
+  // background-color: #f5f5f5;
+  min-height: 100%;
+  align-items: center;
+  padding: 3rem;
+
+  .image {
+    position: relative;
+    .satisfied {
+      // font-size: 0.1rem;
+      position: absolute;
+      top: -5.5rem;
+      right: -1rem;
+      .bp3-icon-standard {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  &:first-child {
+    .name {
+      padding-right: 1rem;
+      white-space: nowrap;
+    }
+    .image {
+      padding-right: 2rem;
+      //border-right: 1px solid lightgrey;
+
+      .satisfied {
+        right: 1.2rem;
+      }
+    }
+  }
+
+  .profile-avatar {
+    width: 8rem;
+    height: 8rem;
+    margin-top: 2rem;
+  }
+
+  .profile-score {
+    text-align: center;
+    span {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+  }
+}
+
+.round {
+  font-stretch: ultra-expanded;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .content {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.instructions-text {
+  p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: 1em;
+  }
+}
+
+.social-exposure {
+  margin: 1rem;
+
+  .alter {
+    // TODO remove "css grid", no necessary here
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: "img range";
+    padding-right: 1rem;
+	font-size: 2.4rem;
+	font-family: "Times New Roman", Times, serif;
+	background-color: lightgrey;
+
+
+    .image {
+      position: relative;
+      .satisfied {
+        // font-size: 0.1rem;
+        position: absolute;
+        top: -0.6rem;
+        right: -0.8rem;
+        .bp3-icon-standard {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    &:first-child {
+      .name {
+        padding-right: 2rem;
+        white-space: nowrap;
+      }
+      .image {
+        padding-right: 2rem;
+        border-right: 1px solid lightgrey;
+
+        .satisfied {
+          right: 1.2rem;
+        }
+      }
+    }
+
+    img {
+      grid-area: img;
+      width: 6rem;
+      height: 6rem;
+    }
+    .range-slider {
+      grid-area: range;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.task {
+  align-content: flex-end;
+  padding-left: 3rem;
+  overflow: auto;
+
+  .form {
+    margin: 0 auto;
+    padding: 100px 30px 0;
+
+    @media (min-width: 800px) {
+      max-width: 60%;
+    }
+  }
+
+  .input-range {
+    margin-bottom: 160px;
+  }
+
+  .task-image {
+    width: 60rem;
+  }
+}
+
+//importing the Orbitron font which makes it look like a digital clock
+@import url(https://fonts.googleapis.com/css?family=Orbitron);
+.timer {
+  margin-top: 2rem;
+  text-align: center;
+
+  .seconds {
+    font-size: 3rem;
+    font-family: Orbitron, sans-serif;
+    color: green;
+  }
+  &.lessThan10 {
+    .seconds {
+      color: orange;
+    }
+  }
+  &.lessThan5 {
+    .seconds {
+      color: red;
+    }
+  }
+}
+
+.task-stimulus {
+  .task-image {
+    height: 35rem;
+    width: 50rem;
+    object-fit: contain;
+  }
+  .transparent {
+    opacity: 0.5;
+  }
+}
+
+.task-response {
+  width: 50rem;
+  margin: 3rem 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 1.9rem;
+  form {
+    width: 40rem;
+  }
+  .call-out {
+    width: 80%;
+  }
+}
+
+.social-interaction {
+  margin: 1rem;
+  display: flex;
+
+  .alter {
+    .info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+      img {
+        grid-area: img;
+        width: 5rem;
+        height: 5rem;
+      }
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+
+  .right {
+    margin-left: 2rem;
+    .non-alter {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      img {
+        grid-area: img;
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+    }
+  }
+}
+
+.revert {
+  all: revert;
+}
