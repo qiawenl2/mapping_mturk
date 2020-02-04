@@ -33,7 +33,7 @@ export default class Overview extends React.Component {
               </span>
 			) : null} */}
 			<p>
-					You are about to play a game with another MTurk worker. Typically it will last around <strong>15 minutes</strong>.
+					You are about to play a game with another participant. Typically it will last less than <strong>30 minutes</strong>.
 					<br />
 					<br />
 
@@ -48,20 +48,21 @@ export default class Overview extends React.Component {
 					of that concept (e.g., celestial body)
 					<br />
 					The guesser will be told <strong>only the category</strong> of that concept and will then ask the thinker a
-					question like "What would it be, if it were a X (e.g.,profession)?" (Please make sure X <strong>is not the same </strong>as what the thinker just gave.)
+					question like "What would it be, if it were a X (e.g.,profession)?" Please make sure X <strong>is not the same </strong>as what the thinker just gave.
 					<br />
-					The thinker will then respond with a concept that <strong>does not directly
-					describe characteristics of that concept </strong>(e.g. saying "it would be astronaut" to a "profession" category, if the concept is "sun"), but rather
-					metaphorically describes it (e.g."it would be king")
+					The thinker will then respond with a concept (e.g., a particular profession) that <strong> best describes the original concept </strong>, e.g."it would be king".
 					<br />
 					At the end of each round, the guesser will try to guess the concept.  
 					<br />
-					You'll see a box in the middle of the screen with your Q & A record which look like this ("sun" is the concept to be guessed):
+					You'll see a box in the middle of the screen with your Q & A record which look like this (in this example, "sun" is the concept that the thinker proposed in the first stage):
+          <br/>
 					 {/* <div className="task-stimulus"> */}
                  		 <img src="/instructions/instruction.jpg" className="task-image" width="900" height="400"/>
 						{/* </div> */}
 					<br />
 					This is a collaborative game, so if the guesser gets it right, then both of you will win!
+          <br />
+          If you have any technical issue, please email Ella at qiawenl2@illinois.edu.
 					{/* The guesser will be prompted to ask a series of <strong>"what would it be, if it were a XXX"</strong> questions.
 					<br /> 
 					<strong></strong>(e.g., "What would it be, if it were a city?")

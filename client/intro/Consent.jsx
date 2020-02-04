@@ -9,10 +9,11 @@ export default class Consent extends React.Component {
         <div className="consent">
           <h1 className="bp3-heading"> Consent Form </h1>
           <p className="bp3-ui-text">
-            <h3>By answering the following questions, you are participating in a study being performed by researchers at Wharton.
+            <h3>By answering the following questions, you are participating in a study being performed by researchers at Wharton. 
+            In this research you will interact anonymously with other participants on this platform.
 			If you have questions about this research, please contact John McCoy at jpmccoy@wharton.upenn.edu. Your participation in this research is voluntary.
 			You may decline to answer any or all of the following questions. 
-			Your anonymity is assured; the researchers who have requested your participation will not receive any personal information about you.
+			Your anonymity is assured; the researchers who have requested your participation will not receive any personal information about you. Please enter your Prolific ID in the identification page.
 			<br />
 			
 			<br />
