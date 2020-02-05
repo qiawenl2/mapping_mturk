@@ -13,7 +13,7 @@ export default class Consent extends React.Component {
             In this research you will interact anonymously with other participants on this platform.
 			If you have questions about this research, please contact John McCoy at jpmccoy@wharton.upenn.edu. Your participation in this research is voluntary.
 			You may decline to answer any or all of the following questions. 
-			Your anonymity is assured; the researchers who have requested your participation will not receive any personal information about you. Please enter your Prolific ID in the identification page.
+			Your anonymity is assured; the researchers who have requested your participation will not receive any personal information about you. Please enter your Turk ID in the identification page.
 			<br />
 			
 			<br />
