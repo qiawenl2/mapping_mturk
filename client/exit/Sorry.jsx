@@ -14,10 +14,10 @@ export default class Sorry extends React.Component {
         msg = "All games you are eligible for have filled up too fast...";
         break;
       case "gameLobbyTimedOut":
-        msg = "There were NOT enough players for the game to start..";
+        msg = "Unfortunately nobody else was here to play.";
 		break;
 	  case "stageTimedOut":
-        msg = "It takes too long for your partner to respond..";
+        msg = "Unfortunately, it took too long for your partner to respond..";
 		break;
 	  case "notResponding":
         msg = "It takes too long for you to respond..";
@@ -52,17 +52,14 @@ export default class Sorry extends React.Component {
 
           {player.exitStatus === "gameLobbyTimedOut" ? (
             <p>
-              Please submit <em>{player._id}</em> as the survey code in order to
-              receive the $1 base payment for your time today. We will also add
-              $0.1 showing-up bonus with the approval of this HIT.
+              Please submit <em>{player._id}</em> to receive your payment.
             </p>
 		  ) : null}
 		  
 		  {player.exitStatus === "stageTimedOut" ? (
             <p>
               Please submit <em>{player._id}</em> as the survey code in order to
-              receive the $1 base payment for your time today. We will also add
-              $0.1 showing-up bonus with the approval of this HIT.
+              receive your payment.
             </p>
           ) : null}
 
@@ -84,10 +81,6 @@ export default class Sorry extends React.Component {
           {/*participated.*/}
           {/*</p>*/}
 
-          <p>
-            <strong>Please come back for the next scheduled game.</strong>{" "}
-            {/*We will send an email notification once the next  HIT is scheduled.*/}
-          </p>
 
           {/*This is not really needed .. all of these people failed to start the game .. if we allow them to submit, then their data will be deleted, we don't want that*/}
           <p>
