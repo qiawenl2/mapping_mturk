@@ -15,7 +15,7 @@
     "react-native": "^0.60.4",
     "react-router-dom": "4.3.1",
     "shuffle-seed": "^1.1.6",
-    "simpl-schema": "1.5.3"
+    "simpl-schema": "1.10.2"
   },
   "meteor": {
     "mainModule": {
